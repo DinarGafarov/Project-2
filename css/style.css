@@ -1,0 +1,1257 @@
+@font-face {
+    font-family: IBM PLex Sens;
+    src: url(/fonts/IBMPlexSans-Thin.ttf);
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: IBM PLex Sens;
+    src: url(/fonts/IBMPlexSans-Light300.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: IBM PLex Sens;
+    src: url(/fonts/IBMPlexSans-Regular400.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: IBM PLex Sens;
+    src: url(/fonts/IBMPlexSans-Medium500.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: IBM PLex Sens;
+    src: url(/fonts/IBMPlexSans-SemiBold600.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+html{
+    font-size: 20px;
+}
+
+
+/* Header */
+
+.header {
+    position: relative;
+    min-width: 48.8rem;
+    min-height: 100vh;
+    background-image: url(../imgBlock3/bc730baf868859c8ea1bf7ada963ce99\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1px;
+    overflow: hidden;
+}
+.header__bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(79, 70, 70, 0.3);
+    width: 100%;
+    height: 100%;
+}
+.container {
+    position: relative;
+    width: 47.3rem;
+    margin: 0 auto;
+    padding: 0 0.75rem;
+}
+.header__top {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+}
+.header__logo {
+    width: 7.8rem;
+    height: 1.95rem;
+    margin-right: 2.2rem;
+}
+.header__logo svg {
+    width: 100%;
+    height: 100%;
+}
+
+.header__nav {
+}
+.nav-top {
+    margin-bottom: 0.7rem;
+    display: flex;
+}
+.nav-top__content li a,
+.nav-bottom__content li a{
+    outline: none;
+    text-decoration: none;
+    color: white;
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 0.6rem;
+    font-weight: 500;
+    font-style: normal;
+    vertical-align: middle;
+}
+.nav-top__content li a:hover,
+.nav-bottom__content li a:hover{
+    color: #A3CC40;
+}
+.nav-top__content {
+    display: flex;
+    flex-direction: row;
+}
+.nav-top__content li{
+    display: flex;
+    align-items: center;
+}
+.nav-top__content li:nth-last-child(n+2){
+    margin-right: 2.5rem;
+}
+.nav-top__content svg {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.nav-bottom {
+}
+.nav-bottom__content {
+    display: flex;
+    flex-direction: row;
+}
+.nav-bottom__content li {
+    display: flex;
+    align-items: center;
+}
+.tel-button svg{
+    margin-right: 0.35rem;
+    fill: #373737;
+}
+.tel-button a{
+    padding: 1px 0.4rem;
+    background-color: white;
+    border-radius: 0.3rem;
+}
+.tel-button span{
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 0.6rem;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 0.78rem;
+    color: black
+}
+.tel-button:hover span{
+    color: white;
+    transition: .3s;
+    fill: white;
+}
+.tel-button:hover a{
+    background-color: #A3CC40;
+    transition: .3s;
+}
+.tel-button:hover svg {
+    fill: white;
+    transition: .3s;
+}
+.nav-bottom__content li:nth-last-child(n+2){
+    margin-right: 4.3rem;
+}
+.nav__lang{
+    margin-left: 5.1rem;
+}
+.nav__lang svg{
+    width: 0.4rem;
+    height: 0.4rem;
+    fill: white;
+}
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transform: translateY(0%);
+    background-color: rgba(119, 111, 111, 0.5);
+    padding: 2px;
+    visibility: hidden;
+}
+.nav__lang a,
+.dropdown a{
+    outline: none;
+    text-decoration: none;
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 0.6rem;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 0.78rem;
+    color: white;
+}
+.nav__lang:hover .dropdown  {
+    transition: 0.6s;
+    visibility: visible;
+}
+.nav__lang:hover  svg{
+    transform: rotate(180deg);
+    transition: .6s;
+}
+.header__center {
+    margin-top: 6.6rem;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+.header__center h1 {
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 3.4rem;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 4.42rem;
+    color: white;
+}
+.header__center span {
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 2.05rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height:  2.65rem;
+    color: white;
+}
+.header::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 5rem  solid white;
+    border-left: 100vw solid transparent;
+}
+
+/* main */
+
+.main {
+    position: relative;
+    width: 100%;
+}
+.container-main{
+    position: relative;
+    width: 42.5rem;
+    padding: 0 0.75rem;
+    margin: 0 auto;
+}
+.main-article {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 21.3rem;
+    min-height: 11.05rem;
+    background-color: white;
+    transform: translateY(-75%);
+    /* margin-right: 2.3rem; */
+    border-radius: 1rem;
+    box-shadow: 1px 1.2rem 1.3rem -0.35rem rgba(163, 204, 64, 0.2);
+}
+.main-article h2{
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 1.65rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height:  2.15rem;
+    color: black;
+    padding: 1.5rem 2.35rem 0.7rem;
+}
+.header-main {
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    font-style: normal;
+    line-height:  3.12rem;
+    color: #A3CC40;
+}
+.main-article p{
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 0.55rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height:  0.71rem;
+    color: black;
+    padding: 0.2rem  2.35rem;
+    text-align: left;
+}
+.block1 {
+    position: relative;
+}
+.block1__header {
+    margin-top: 2rem;
+}
+.block1__content {
+    margin-top: 4.2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 7.2rem;
+}
+.content-item {
+   width: 12.25rem;
+   text-align: center;
+}
+.content-item h3{
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height:  1.3rem;
+    color: black;
+    margin-top: 1.75rem;
+}
+.content-item p{
+    text-align: center;
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 0.55rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height:  0.71rem;
+    color: black;
+    margin-top: 1.25rem;
+    padding-bottom: 2rem;
+}
+.content-item__img {
+    width: 12.25rem;
+    height: 8.45rem;
+    border-radius: 1rem;
+}
+.content-item__img:hover {
+    transform: scale(1.2);
+    transition: .4s;
+}
+.content-item__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Block2 */
+
+.block2 {
+    position: relative;
+}
+.block2__header {
+}
+
+.block2__header-table {
+}
+.table {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 4.5rem;
+}
+.tbody__content-scroll{
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    overflow: hidden;
+}
+.tbody__content-scroll{
+    /* scrollbar-width: thin; */
+    scrollbar-color: #373737 #A3CC40
+}
+
+.tbody__content-block{
+     
+    overflow-y: scroll;
+    height: 10rem;
+}
+.tbody__content-block::-webkit-scrollbar{
+    width: 0.3rem;
+}
+.tbody__content-block::-webkit-scrollbar-track{
+    background: #373737;
+}
+.tbody__content-block::-webkit-scrollbar-thumb{
+    border-radius: 1rem;
+    background-color: #A3CC40;
+    border: 4px solid #A3CC40;
+}
+.tbody__content-block table{
+    width: 100%;
+    height: 9rem;
+}
+.thead {
+    height: 2.25rem;
+    background-color: #A3CC40;
+    
+}
+.thead th:first-child,
+.tbody td:first-child{
+    width: 3.8rem;
+    box-sizing: border-box;
+}
+.thead-row:not(:first-child),
+.tbody-row:not(:first-child){
+    width: 10.2rem;
+}
+.thead-row {
+    text-align: start;
+    vertical-align: middle;
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height:  1.3rem;
+    color: white;
+}
+
+.tbody__content-block{
+    
+}
+.tbody {
+}
+
+.tbody-content {
+    height: 2.25rem;
+    background-color: #373737;
+}
+.tbody-row {
+    text-align: start;
+    vertical-align: middle;
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height:  0.9rem;
+    color: white;
+}
+.tbody-row svg {
+    cursor: pointer;
+    width: 0.6rem;
+    height: 0.6rem;
+}
+.tbody-row svg:active{
+    fill: #A3CC40;
+}
+.tbody-row:first-child{
+    padding-left: 1.2rem;
+}
+
+.tbody-content:nth-child(2n){
+    background-color: #4C4D4F;
+}
+
+.block2__text {
+    margin-top: 1.5rem;
+    margin-bottom: 4.5rem;
+}
+.block2__text p {
+    text-align: center;
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 0.55rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height:  0.7rem;
+    color: black;
+    padding: 0 7.5rem;
+}
+
+.gift-img {
+    width: 13.8rem;
+    height: 13.8rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(115%);
+    z-index: 2;
+}   
+.gift-img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Block 3 */
+
+.block3 {
+    /* height: 100vh; */
+    /* width: 100%; */
+    position: relative;
+    background-image: url(../imgBlock3/1488723618_ksdjvhsvg\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;overflow: hidden;
+    
+    padding: 1px;
+    min-width: 48.8rem;
+}
+.block3::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    border-top: 5rem solid white;
+    border-right: 100vw solid transparent;
+    z-index: 1;
+}
+.block3::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: 5rem solid white;
+    border-left: 100vw solid transparent;
+    z-index: 1;
+}
+.block3-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(55, 51, 51, 0.8);
+}
+.block3__content {
+    padding-left: 15rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.header-gift {
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    font-style: normal;
+    line-height:  3.12rem;
+    color: white;
+    text-align: right;
+}
+.block3__content-text {
+    margin-top: 1rem;
+}
+.block3__content-text p{
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 0.55rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height:  0.71rem;
+    color: white;
+    text-align: right;
+    padding-bottom: 0.7rem;
+}
+.block3__button{
+    text-align: end;
+    margin-bottom: 7rem;
+}
+.block3__button button {
+    margin-top: 1.2rem;
+    width: 9.5rem;
+    height:  1.55rem;
+    background-color: #A3CC40;
+    border-radius: 0.3rem;
+    border: 1px solid white;
+}
+.block3__button button:hover{
+    background-color: white;
+    border: 1px solid #A3CC40 ;
+    transition: .4s;
+    color: #A3CC40;
+}
+.block3__button:hover span{
+    color: #A3CC40;
+    transition: .4s;
+}
+.block3__button span{
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    font-style: normal;
+    line-height:  0.9rem;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* block4 */
+
+.block4 {
+    position: relative;
+}
+
+.block__tetx {
+    margin-top: 1.35rem;
+}
+.block__tetx p {
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 0.55rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height:  0.71rem;
+    color: black;
+}
+.block4__content {
+    position: relative;
+    margin-top: 3.2rem;
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(3, 1fr);
+}
+.block4__content-item {
+    position: relative;
+    width: 100%;
+    max-height: 14.15rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.block4__img {
+}
+.block4__img img{
+    width: 100%;
+    height: 100%;
+}
+.content-item__bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(55, 51, 51, 0.4);
+}
+.content-item__slaider {
+    position: absolute;
+    padding: 1px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+     
+}
+ 
+.block4__content-item:hover .content-item__slaider{
+    transform: translateY(0);
+    animation: slaider;
+    animation-duration: .3s;
+}
+.block4__content-item:hover .content-item__bg{
+    opacity: 0;
+    transition: .3s;
+}
+@keyframes slaider {
+    0%{
+        transform: translateY(100%);
+    }
+    15%{
+        transform: translateY(85%);
+    }
+    25% {
+        transform: translateY(75%);
+    }
+    40%{
+        transform: translateY(60%);
+    }
+    50% {
+        transform: translateY(50%);
+    }
+    65%{
+        transform: translateY(35%);
+    }
+    75% {                               
+        transform: translateY(25%);
+    }
+    90%{
+        transform: translateY(10%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+.content-item__slaider h3{
+    position: relative;
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 1.45rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height:  1.88rem;
+    color: white;
+    margin-top: 1rem;
+    margin-left: 1.1rem;
+}
+.content-item__slaider p{
+    position: relative;
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 0.55rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height:  0.71rem;
+    color: white;
+    padding-top: 0.65rem;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+}
+.slaider-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(138, 210, 71, 0.5);
+
+}
+
+/* Block5 */
+
+.block5 {
+    position: relative;
+}
+.block5__header {
+    margin-top: 4rem;
+}
+.block5__text {
+    margin-top: 1.3rem;
+}
+
+.block5__text p{
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 0.55rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height:  0.71rem;
+    color: black;
+}
+
+.block5__content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2.85rem;
+}
+.block5__content-item {
+    position: relative;
+    width: 12.25rem;
+    height: 16.55rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0px 0.45rem 0.55rem -0.35rem rgba(34, 60, 80, 0.66);
+}
+.block5__content-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content-item__text {
+    position: absolute;
+    bottom: 0;
+    top: 10rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-item__text span{
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height:  1.3rem;
+    color: white;
+    position: absolute;
+    text-align: center;
+    padding: 0 2rem;
+}
+.content-item__text-bg {
+    position: absolute;
+    top: 0;
+    bottom: -2rem;
+    left: 0;
+    right: -2px;
+    background-color: rgba(157, 217, 100, 0.783);
+    transform: skew(0, -15deg);
+}
+.block5__content-item:hover .content-item__text-bg  {
+    transform: skew(0, 15deg);
+    transition: .4s;
+}
+/* Block6 */
+
+.block6 {
+    position: relative;
+    background-image: url(../imgBlock3/1488723618_ksdjvhsvg\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: 2rem;
+    min-width: 2rem;
+}
+.block6-bg {
+    position: absolute;
+    background-color: rgba(38, 37, 37, 0.8);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.block6__header{
+    margin-top: 6.3rem;
+}
+.block6::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    border-top: 5rem solid white;
+    border-right: 100vw solid transparent;
+    z-index: 1;
+}
+.block6::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: 5rem solid white;
+    border-left: 100vw solid transparent;
+}
+.block6__text {
+    margin-top: 1.3rem;
+}
+.block6__text p{
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 0.55rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height:  0.71rem;
+    color: white;
+}
+
+.carrusel {
+    margin-top: 5rem;
+    position: relative;
+    margin-bottom: 8.35rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.owl-carousel{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+.owl-nav.disabled{
+    display: block !important;
+}
+.owl-prev span{
+    position: absolute;
+    font-size: 2rem;
+    color: #A3CC40;
+    top: 5.75rem;
+    left: 14rem;
+}
+.owl-next span{
+    position: absolute;
+    font-size: 2rem;
+    color: #A3CC40;
+    top: 5.75rem;
+    left: 31rem;
+}
+.owl-prev span:hover,
+.owl-next span:hover{
+    transform: scale(1.4);
+    transition: .2s;
+}
+
+
+.carrusel__item {
+    max-width: 10.5rem;
+    height: 14.2rem;
+    background-color: #A3CC40;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 0.7rem ;
+    margin-left: 2rem;
+}
+
+.carrusel__item:hover {
+    transform: scale(1.1);
+    transition: .4s;
+}
+.carrusel__item-img{
+    width: 100%;
+    height: 7.6rem;
+    position: relative;
+}
+.carrusel__item-img img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.carrusel__item-text {
+    margin-top: 0.85rem;
+    margin-left: 0.44rem;
+    margin-right: 0.74rem;
+}
+.carrusel__item-text h3 {
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height:  1rem;
+    color: white;
+}
+.carrusel__item-text p {
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 0.5rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height:  0.65rem;
+    color: white;
+    padding-top: 0.7rem;
+}
+.carrusel__item-text span {
+    padding-top: 0.5rem;
+    float: right;
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 0.4rem;
+    font-weight: 300;
+    font-style: normal;
+    line-height:  0.55rem;
+    color: white;
+}
+
+/* block7 */
+
+.block7 {
+    position: relative;
+}
+.container-main {
+}
+.block7__content {
+    max-width: 38.35rem;
+    height: 26.35rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0.45rem 0.45rem 1.6rem -1px rgba(202, 202, 202, 0.84);
+}
+.content-img{
+    width: 50%;
+    height: 100%;
+    position: relative;
+     
+}
+.content-img img{
+    width: 100%;
+    height: 100%;
+     
+}
+.content-img__bg{
+    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(136,129,255,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,0.17699579831932777) 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+}
+.block7__form {
+    padding-left: 1rem;
+    width: 50%;
+}
+.block7__form h4{
+    text-align: center;
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-style: normal;
+    line-height:  1.62rem;
+    color: #A3CC40;
+    margin-top: 1.55rem;
+}
+.form{}
+.form-name {
+    margin-top: 1rem;
+}
+
+.form-name input,
+.form-email input,
+.form-select select {
+    display: block;
+    width: 17.2rem;
+    height: 2rem;
+    padding-left: 0.79rem;
+    box-sizing: border-box;
+    background: rgb(199 198 204 / 49%);
+    outline: none;
+    border: 0;
+    border-radius: 0.5rem;
+}     
+
+.block7__form input::placeholder,
+.block7__form .form-text textarea::placeholder {
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height:  0.97rem;
+}
+.form-email {
+    margin-top: 1rem;
+}
+.form-select {
+    margin-top: 1rem;
+}
+.form-text{
+    margin-top: 1rem;
+}
+.form-text textarea{
+    width:  17.2rem;
+    height: 6rem;
+    background: rgb(199 198 204 / 49%);
+    padding-left: 0.79rem;
+    padding-top: 0.79rem;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+}
+
+.form-check {
+    margin-top: 0.65rem;
+    display: flex;
+    align-items: center;
+}
+.form-check input{
+    display: none;
+}
+
+.checkbox{
+    width: 0.7rem;
+    height: 0.7rem;
+    border: 1px solid #A3CC40;
+    border-radius: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.checkbox::before{
+    content: "";
+    display: block;
+    width: 0.7rem;
+    height: 0.7rem;
+    background: url(/svg/check-small-svgrepo-com.svg);
+    background-size: 0.7rem 0.7rem;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.form-check label{
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 0.5rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height:  0.65rem;
+    padding-left: 0.5rem;
+    cursor: pointer;
+}
+
+
+.form-check input:checked + .checkbox::before{
+    opacity: 1;
+}
+
+
+.form-button {
+    margin-top: 2.4rem;
+     
+}
+.form-button input {
+    width: 17.2rem;
+    height: 2.85rem;
+    background-color: #A3CC40;
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    line-height:  1.3rem;
+    color: white;
+    border: 0;
+    border-radius: 0.5rem;
+}
+
+.form-name input:hover,
+.form-email input:hover,
+.form-select select:hover,
+.form-text textarea:hover{
+    background-color: white;
+    border: 1px solid #A3CC40;
+    transition: .4s;
+}
+
+
+/* Block8 */
+
+.block8 {
+    position: relative;
+    margin-top: 3.05rem;
+}
+.container-block8 {
+    width: 48.65rem;
+    padding: 0 0.75rem;
+    margin: 0 auto;
+    position: relative;
+}
+.block8__content {
+    width: 100%;
+    height: 0;
+    padding-bottom: 48%;
+    box-shadow: 0px 5rem 0.75rem 0.3rem rgba(163, 204, 64, 0.84);
+    position: relative;
+}
+.block8__content iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/* footer */
+
+.footer {
+    position: relative;
+    background-color: #A3CC40;
+    padding: 1px;
+    min-width: 48.8rem;
+}
+.footer__content{
+    margin-top: 4.2rem;
+}
+.footer__content{
+    display: flex;
+}
+.footer__block1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 7.9rem;
+}
+
+.footer__block1-text {
+    margin-top: 0.75rem;
+}
+.footer__block1-text p{
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height:  0.9rem;
+    color: white;
+}
+.footer__block1-media {
+    margin-top: 1.25rem;
+}
+.block1-media__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.block1-media__item li a svg {
+    width: 0.7rem;
+    height: 0.7rem;
+}
+.block1-media__item li{
+    width: 1.55rem;
+    height: 1.55rem;
+    border-radius: 1rem;
+    background-color: #BEE956;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.block1-media__item li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__content-media{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__block2 h3,
+.footer__block3 h3{
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    font-style: normal;
+    line-height:  1.3rem;
+    color: white;
+}
+.footer__block2,
+.footer__block3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__block2-content,
+.footer__block3-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.2rem;
+
+}
+.footer__block2-content li,
+.footer__block3-content li{
+    padding-bottom: 0.5rem;
+}
+.footer__block2 {
+    margin-right: 6rem;
+}
+.footer__block2 .footer__block2-content li,
+.footer__block3 .footer__block3-content li {
+    margin-right: 0px;
+}
+
+.footer__block2 li a:hover,
+.footer__block3 li a:hover {
+    color: rgb(255, 255, 254);
+}
+
+.footer__bottom {
+    margin-top: 2.1rem;
+    margin-bottom: 2.1rem;
+}
+.footer__bottom p{
+    font-family: IBM PLex Sens, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height:  0.97rem;
+    color: white;
+} 
+
+.svggg{
+    width: 10rem;
+    height: 10rem;
+}
+.svggg svg{
+    width: 10rem;
+    height: 10rem;
+    
+}
